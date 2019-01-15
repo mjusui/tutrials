@@ -2,12 +2,12 @@
 const inst = new Vue({
   el: '#instance',
   data: {
-    message: 'x',
+    count: 0,
   },
   created:function(){
     const loop=()=>{
       setTimeout(()=>{
-        inst.message+='x';
+        this.count++;
         loop();
       },1000);
     };
