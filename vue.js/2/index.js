@@ -2,8 +2,9 @@
 const inst = new Vue({
   el: '#instance',
   data: {
-    name: 'namex',
     count: 0,
+    disp: false,
+    name: 'namex',
   },
   created:function(){
     const loop=()=>{
