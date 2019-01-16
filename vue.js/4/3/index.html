@@ -1,14 +1,12 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-  <title>Tutrials - 3. Computed Properties</title>
+  <title>Tutrials - 4-3. Style Bindings with Components</title>
 </head>
 <body>
   <div id='instance'>
-    <div >{{ count }}</div>
-    <div >{{ x }}</div>
-    <div >{{ rand }}</div>
-    <div >{{ calcRand() }}</div>
+    <div v-bind:style="ab">{{ name }}</div>
+    <div v-bind:style="ab" style='color: #FF0000'>{{ name }}</div>
   </div>
   <script src='https://cdn.jsdelivr.net/npm/vue'></script>
   <script src='index.js'></script>

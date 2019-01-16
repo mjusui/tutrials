@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Tutrials - 4-1. Class Bindings</title>
+  <link rel='stylesheet' href='index.css'></link>
+</head>
+<body>
+  <div id='instance'>
+    <div class='a b c'>{{ name }}</div>
+    <div v-bind:class="{ a: true, b: true, c: flag }">{{ name }}</div>
+    <div v-bind:class="clas">{{ name }}</div>
+    <div v-bind:class="clas" class='b'>{{ name }}</div>
+  </div>
+  <script src='https://cdn.jsdelivr.net/npm/vue'></script>
+  <script src='index.js'></script>
+</body>
+</html>
