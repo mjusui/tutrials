@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Tutrials - 7. Event Handling</title>
+</head>
+<body>
+  <div id='instance'>
+    <div v-on:click="count++">count: {{ count }}</div>
+    <div v-on:click="outer++">
+      outer: {{ outer }}
+      <div v-on:click="inner++">inner: {{ inner }}</div>
+      <div v-on:click.stop="inner++">inner: {{ inner }}</div>
+      <div v-on:click.once.stop="inner++">inner: {{ inner }}</div>
+    </div>
+  </div>
+  <script src='https://cdn.jsdelivr.net/npm/vue'></script>
+  <script src='index.js'></script>
+</body>
+</html>
