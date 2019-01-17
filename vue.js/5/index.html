@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Tutrials - 5. Conditions</title>
+</head>
+<body>
+  <div id='instance'>
+    <div v-if="disp">disp: {{ name }}</div>
+    <div v-else-if="nums.length">nums.length: {{ name }}</div>
+    <div v-else="nums.length">{{ name }}</div>
+    <div v-on:click="disp=!disp">push</div>
+    <div v-on:click="toggle">push</div>
+    <template v-if="disp">
+      <input></input>
+      <input key='a'></input>
+    </template>
+    <template v-else="disp">
+      <input></input>
+      <input key='b'></input>
+    </template>
+    <div v-show="show">{{ nums }}</div>
+    <div v-on:click="show=!show">push</div>
+  </div>
+  <script src='https://cdn.jsdelivr.net/npm/vue'></script>
+  <script src='index.js'></script>
+</body>
+</html>
