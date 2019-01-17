@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Tutrials - 6. List</title>
+</head>
+<body>
+  <div id='instance'>
+    <div v-on:click="nums.push('x')">push</div>
+    <div v-on:click="vals['a']='w'">push</div>
+    <div v-for="num in nums">{{ num }}</div>
+    <div v-for="num in filter">{{ num }}</div>
+    <div v-for="(num,idx) in nums">{{ num }}-{{ idx }}</div>
+    <div v-for="val in vals">{{ val }}</div>
+    <div v-for="(val,key) in vals">{{ key }}-{{ val }}</div>
+    <div v-for="(val,key,idx) in vals">{{ idx }}-{{ key }}-{{ val }}</div>
+    <div v-for="(num,idx) in nums" :key="idx">{{ num }}-{{ idx }}</div>
+    <div v-for="(val,key) in vals" v-bind:key="key">{{ key }}-{{ val }}</div>
+  </div>
+  <script src='https://cdn.jsdelivr.net/npm/vue'></script>
+  <script src='index.js'></script>
+</body>
+</html>
