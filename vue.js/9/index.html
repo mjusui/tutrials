@@ -5,8 +5,13 @@
 </head>
 <body>
   <div id='instance'>
-    <input v-model="text" placeholder='hey'>
-    <div>{{ text }}</div>
+    <good-thing
+      v-model="thing"
+      @click="good+=11"
+      @more-good="good+=11"
+      :good='good'
+      :thing='thing'
+    >{{ text }}</good-thing>
   </div>
   <script src='https://cdn.jsdelivr.net/npm/vue'></script>
   <script src='index.js'></script>
